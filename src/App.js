@@ -13,6 +13,17 @@ function App() {
         <Route path='/signup' element={<RegistrationPage />} />
         <Route element={<AuthenticateUser />}>
           <Route path='/posts' element={<PostsPage />} />
+
+          <Route path='/users'/>
+          {/* element={<UsersPage />} */}
+          <Route path='/exercises'/>
+          {/* element={<ExercisePage />} */}
+          <Route path='/settings' />
+          {/* element={<SettingPage />} */}
+          <Route path='/add-user' />
+          {/* element={<AddUserPage />} */}
+          <Route path='/add-cohort' />
+          {/* element={<AddCohortPage />} */}
         </Route>
       </Routes>
     </div>
